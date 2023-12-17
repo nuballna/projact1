@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Form</title>
+</head>
+<body>
+
+
+
+  <style>
+    table {
+      background-color:#f3f2c0;
+      justify-content: left;
+      text-align: left;
+      align-items: left;
+
+
+    }
+    bc{
+      margin-right: 4.1px;
+    }
+    bx{
+      margin-right: 60px;
+    }
+    bo{
+      margin-right:21px ;
+    }
+  </style>
+
+
+
+  <center><h3>แบบสอบถาม</h3></center>
+  <hr>
+<form action="submit.php" method="post">
+  <table align="center">
+    <tr>
+      <th><b>ข้อมูลผู้ตอบแบบสอบถาม</b></th>
+    </tr>
+    <tr>
+      <td>
+        <b><label>ชื่อ-นามสกุล   </label></b>
+        <input type="text" name="student_name" size="30"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <bc><label>รหัสนักศึกษา</label></bc>
+        <input type="text" name="student_id" size="30"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <bx>เพศ</bx>
+       
+        <input type="radio" name="gender" value="male" checked> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+     
+      </td>
+    </tr>
+    <r>
+      <td><bo>สังกัดคณะ</bo>
+        <select name="faculty">
+          <option value="วิทยาสาตร์">วิทยาศาตร์</option>
+          <option value="วิทยาการคอมพิวเตอร์">วิทยาการคอมพิวเตอร์</option>
+          <option value="ครุศาสตร์">ครุศาสตร์</option>
+          <option value="บริหารธุรกิจและการจัดการ">บริหารธุรกิจและการจัดการ</option>
+          <option value="มนุษยศาสตร์">มนุษยศาสตร์</option>
+          <option value="เทคโนโลยีอุตสาหกรรม">เทคโนโลยีอุตสาหกรรม</option>
+          <option value="เกษตรศาสตร์">เกษตรศาสตร์</option>
+          <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+          <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+          <option value="แพทย์แผนไทยและทางเลือก">แพทย์แผนไทยและทางเลือก</option>
+          <option value="นิติศาสตร์">นิติศาสตร์</option>
+        </select>
+     
+      </td>
+    </r>
+    <tr>
+      <td><b>แม่สีที่ชื่นชอบ</b></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="color[]" value="red"> สีแดง
+        <input type="checkbox" name="color[]" value="green"> สีเขียว
+        <input type="checkbox" name="color[]" value="blue"> สีน้ำเงิน
+      </td>
+    </tr>
+    <tr>
+      <td><b>ผลไม้ที่ชื่นชอบ</b></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="fruit[]" value="mango"> มะม่วง
+        <input type="checkbox" name="fruit[]" value="longan"> น้อยหน่า
+        <input type="checkbox" name="fruit[]" value="durian"> ทุเรียน <br>
+        <input type="checkbox" name="fruit[]" value="lychee"> ลำไย
+        <input type="checkbox" name="fruit[]" value="guava"> ฝรั่ง
+        <input type="checkbox" name="fruit[]" value="watermelon"> แตงโม
+      </td>
+    </tr>
+    <tr>
+      <td><b>อาหารที่ชื่นชอบ</b></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="food[]" value="tomyumgoong"> ต้มยำกุ้ง
+        <input type="checkbox" name="food[]" value="kaijeowmoo"> ไข่เจียวหมูสับ
+        <input type="checkbox" name="food[]" value="gangkhaai"> แกงข่าไก่ <br>
+        <input type="checkbox" name="food[]" value="gangkeowwangai"> แกงเขียวหวานไก่
+        <input type="checkbox" name="food[]" value="padthai"> ผัดไทย
+        <input type="checkbox" name="food[]" value="radnaahaikrob"> ราดหน้าหมีกรอบ
+      </td>
+    </tr>
+    <tr>
+
+
+      <td>
+        <center>
+          <input type="submit" value="บันทึก">
+        </center>
+        </td>
+    </tr>
+  </table>
+</form>
+
+
+</body>
+</html>
